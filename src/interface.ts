@@ -11,3 +11,7 @@ export interface ITableProps{
   columns: IColumnConfig[];
   data: any[];
 }
+
+export interface ITimelineProps {
+  timeline: {label: string, date: string, completed: boolean}[]
+}

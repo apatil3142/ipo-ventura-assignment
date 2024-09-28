@@ -1,7 +1,9 @@
 [
   {
     "id":"10001",
-    "company": "OYO Pvt Ltd",
+    "companyTitle": "OYO",
+    "companyName": "OYO Pvt Ltd",
+    "logoUrl": "https://logodownload.org/wp-content/uploads/2020/02/oyo-logo-2.png",
     "issueDate": ["12/12/2023", "15/12/2023"],
     "issuePrice": "36000000000",
     "priceRange": [50, 60],
@@ -23,7 +25,9 @@
   },
   {
     "id":"10002",
-    "company": "GO Air",
+    "companyTitle": "GO Air",
+    "companyName": "GO Air Pvt Ltd",
+    "logoUrl": "https://logodix.com/logo/1938564.jpg",
     "issueDate": ["10/08/2023", "10/08/2023"],
     "issuePrice": "25000000000",
     "priceRange": [70, 80],
@@ -45,7 +49,9 @@
   },
   {
     "id":"10003",
-    "company": "Reliance Jio",
+    "companyTitle": "Jio",
+    "companyName": "Reliance Jio",
+    "logoUrl": "https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fbf%2FReliance_Jio_Logo.svg%2F1500px-Reliance_Jio_Logo.svg.png&w=1080&q=50",
     "issueDate": ["01/03/2024", "04/03/2024"],
     "issuePrice": "48000000000",
     "priceRange": [90, 110],
@@ -67,7 +73,9 @@
   },
   {
     "id":"10004",
-    "company": "Zomato Ltd",
+    "companyTitle": "Zomato",
+    "companyName": "Zomato Ltd",
+    "logoUrl": "https://logowik.com/content/uploads/images/zomato8266.logowik.com.webp",
     "issueDate": ["15/02/2024", "19/02/2024"],
     "issuePrice": "35000000000",
     "priceRange": [55, 70],
@@ -89,7 +97,9 @@
   },
   {
     "id":"10005",
-    "company": "Swiggy Ltd",
+    "companyTitle": "Swiggy",
+    "companyName": "Swiggy Ltd",
+    "logoUrl": "https://logolook.net/wp-content/uploads/2023/04/Swiggy-Logo-500x281.png",
     "issueDate": ["05/06/2024", "08/06/2024"],
     "issuePrice": "22000000000",
     "priceRange": [65, 80],
@@ -111,7 +121,9 @@
   },
   {
     "id":"10006",
-    "company": "Nykaa Ltd",
+    "companyTitle": "Nykaa",
+    "companyName": "Nykaa Ltd",
+    "logoUrl": "https://tradebrains.in/wp-content/uploads/2021/10/nykaa-logo-1.jpg",
     "issueDate": ["12/10/2023", "16/10/2023"],
     "issuePrice": "27000000000",
     "priceRange": [75, 95],
@@ -133,7 +145,9 @@
   },
   {
     "id":"10007",
-    "company": "Ola Electric",
+    "companyTitle": "Ola",
+    "companyName": "Ola Electric",
+    "logoUrl": "https://i.gadgets360cdn.com/large/ola_logo_1491228113625.jpg",
     "issueDate": ["20/07/2023", "24/07/2023"],
     "issuePrice": "32000000000",
     "priceRange": [85, 100],
@@ -155,7 +169,9 @@
   },
   {
     "id":"10008",
-    "company": "Bajaj Energy",
+    "companyTitle": "Bajaj",
+    "companyName": "Bajaj Energy",
+    "logoUrl": "https://static.startuptalky.com/2022/04/Bajaj-Energy-Logo-StartupTalky.jpg",
     "issueDate": ["05/11/2023", "09/11/2023"],
     "issuePrice": "18000000000",
     "priceRange": [60, 75],

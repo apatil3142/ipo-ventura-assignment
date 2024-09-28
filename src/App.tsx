@@ -11,11 +11,15 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 `;
 
 const Wrrapper = styled.div`
-  width: 1366px;
   padding: 20px 0;
+  width: 100%;
+  @media only screen and (min-width: 1366px){
+    width: 1366px;
+  }
 `;
 
 function App() {

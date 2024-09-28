@@ -5,11 +5,12 @@ import { IColumnConfig } from "../interface";
 import { getIPOList } from "../apiConfigs/api";
 import { formatLargeNumber, getIssueDate } from "../utils";
 import { useNavigate } from "react-router-dom";
+import BreadCrumb from "../components/BreadCrumb";
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
 `;
 
@@ -63,9 +64,9 @@ const Home = () => {
       alignContent: "left",
       render: (row) => (
         <CompanyNameContainer onClick={() => navigate(`/ipoDetails/${row.id}`)}>
-          <CompanyLogo src="https://logodownload.org/wp-content/uploads/2020/02/oyo-logo-2.png" />
+          <CompanyLogo src={row?.logoUrl}/>
           <NameWrapper>
-            <Title>{row?.company}</Title>
+            <Title>{row?.companyTitle}</Title>
             <SubTitle>{getIssueDate(row.issueDate)}</SubTitle>
           </NameWrapper>
         </CompanyNameContainer>
@@ -99,6 +100,7 @@ const Home = () => {
 
   return (
     <Container>
+      <BreadCrumb breadCrumbList={[{label: 'Home', link: '/'}]}/>
       <Table columns={columnConfig} data={ipoList} />
     </Container>
   );
