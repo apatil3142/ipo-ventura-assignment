@@ -1,21 +1,32 @@
-import React from 'react';
-import './App.css';
-import styled from 'styled-components';
-import { Routes, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import IpoDetails from './pages/IpoDetails';
+import React from "react";
+import "./App.css";
+import styled from "styled-components";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import IpoDetails from "./pages/IpoDetails";
 
 const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
+const Wrrapper = styled.div`
+  width: 1366px;
+  padding: 20px 0;
 `;
 
 function App() {
   return (
     <Container>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/ipoDetails/:ipoId' element={<IpoDetails />} />
-      </Routes>
+      <Wrrapper>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ipoDetails/:ipoId" element={<IpoDetails />} />
+        </Routes>
+      </Wrrapper>
     </Container>
   );
 }
