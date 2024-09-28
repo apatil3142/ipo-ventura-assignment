@@ -19,6 +19,11 @@ const IPODetailsHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 425px){
+    >:nth-child(2){
+      display: none;
+    }
+  }
 `;
 
 const IPOHeaderContainer = styled.div`
@@ -50,6 +55,15 @@ const IPODetailsWrapper = styled.div`
   row-gap: 20px;
   @media only screen and (min-width: 1366px) {
     grid-template-columns: repeat(4, 1fr);
+  }
+`;
+
+const IPOTimelineWrapper = styled(IPODetailsWrapper)`
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @media only screen and (min-width: 1366px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -189,9 +203,9 @@ const IpoDetails = () => {
           </IPODetailsContainer>
           <IPODetailsContainer>
             <Title fontSize={20}>IPO timeline</Title>
-            <IPODetailsWrapper>
+            <IPOTimelineWrapper>
               <Timeline timeline={ipoDetails?.ipoTimeLine} />
-            </IPODetailsWrapper>
+            </IPOTimelineWrapper>
           </IPODetailsContainer>
           <IPODetailsContainer>
             <Title fontSize={20}>About the company</Title>

@@ -60,7 +60,7 @@ const Home = () => {
   const columnConfig: IColumnConfig[] = [
     {
       columnId: "company",
-      header: "Company / Issue sate",
+      header: "Company / Issue date",
       alignContent: "left",
       render: (row) => (
         <CompanyNameContainer onClick={() => navigate(`/ipoDetails/${row.id}`)}>
